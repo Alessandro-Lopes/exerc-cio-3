@@ -1,0 +1,25 @@
+import  axios from 'axios';
+
+class  Api  {
+  // Método estático.
+  // Função assíncrona.
+  static async getWeather ( city )  {
+    // URL buscada no site HGBrasil.
+    
+    const  response =  new  city = new Weather (await (await axios.get (`https://api.hgbrasil.com/weather?key=888eb4fc&city_name=$ {town}`)) .data.results);
+         return;
+    }
+}   
+
+class Weather {
+    constructor ({cidade, hora, tempo, descrição}) {
+        this.city = city,
+        this.temp = temp,
+        this.time = time,
+        this.description = description
+   } 
+    
+}
+
+Api . getForecast ( 'florianópolis' ) . então ( ( v )  =>  { console . log ( v ) ; } ) ;
+
